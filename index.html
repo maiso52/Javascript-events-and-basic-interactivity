@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Webpage Assignment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Interactive Webpage</h1>
+
+  <!-- SECTION 1: FORM -->
+  <section>
+    <h2>Signup Form</h2>
+    <form id="signupForm">
+      <label>
+        Name:
+        <input type="text" id="name">
+      </label><br><br>
+      <label>
+        Email:
+        <input type="text" id="email">
+      </label><br><br>
+      <label>
+        Password:
+        <input type="password" id="password">
+      </label><br><br>
+      <button type="submit">Submit</button>
+      <p id="formFeedback"></p>
+    </form>
+  </section>
+
+  <!-- SECTION 2: MODAL -->
+  <section>
+    <h2>Modal Example</h2>
+    <button id="openModal">Open Modal</button>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <p id="modalText">Dynamic modal content here</p>
+        <button id="closeModal">Close</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: SLIDER -->
+  <section>
+    <h2>Slider Control</h2>
+    <input type="range" id="slider" min="0" max="100" value="50">
+    <span id="sliderValue">50</span>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
